@@ -1,0 +1,19 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /avtar/
+Allow: /optimaze/
+Sitemap:https://https://www.salesforce.com/sitemap_index.xml
+Sitemap:https://https://www.salesforce.com/sitemap-image.xml
+Sitemap:https://https://www.salesforce.com/sitemap-video.xml
+
+User-agent: Yandex
+Disallow: /admin/
+Disallow: /avtar/
+Allow: /optimaze/
+Host: https://www.salesforce.com/
+
+User-agent: Googlebot
+Disallow: /admin/
+Disallow: /avtar/
+Allow: /optimaze/
+Host: https://www.salesforce.com/
