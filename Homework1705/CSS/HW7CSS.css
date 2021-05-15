@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin-top: 0;
+}
+
+#Ident{
+	background: #F9DB9F;
+}
+
+#Ident .red_color h2{
+	color: #A51E20;
+} 
+
+#Ident .green_color p{
+	color: #0B7604;
+	font-size: 16px;
+}
+
+#Ident .green_color h2{
+	color: #029CF2;
+}
+
+.boxing h2{
+	color: #787272;
+}
+
+.boxing p{
+	font-size: 14px;
+}
+
+h1{
+	text-align: center;
+	color:#A703B5;
+	text-decoration: underline;
+	font-size: 50px;
+}
