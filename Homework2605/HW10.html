@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homework10</title>
+</head>
+
+<style>
+	.Main{
+		position: fixed;
+		background-image: url("Img/1.jpg");
+		top: 0;
+		left: 0;
+		background-size: cover;
+		z-index: 999;
+		height: 100%;
+		width: 100%;
+	}
+	h2{
+		text-align: center;
+		color: #0A8602;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		font-size: 30px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		margin-left: 10px;
+		z-index: 99999;
+		background: #F7CA78;
+		width: 280px;
+	}
+	
+	.Window{
+		background-image: url("Img/2.jpg");
+		width: 300px;
+		height: 400px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -150px;
+		margin-top: -200px;
+		z-index: 9999;
+	}
+	.clossed{
+		color: #0A8602;
+		font-size: 20px;
+		z-index: 999999;
+		position: absolute;
+		cursor: pointer;
+		top: 8px;
+		left: 275px;
+	}
+	.input{
+		width: 250px;
+		height: 35px;
+		display: block;
+		text-indent: 20px;
+		margin-bottom: 30px;
+		margin-left: 18px;
+		border: dotted  #0A8602 5px;
+	}
+	.button{
+		height: 30px;
+		width: 60px;
+		font-size: 15px;
+		text-align: center;
+		position: absolute;
+		left: 75%;
+		background: #F7CA78;
+		color: #0F5501;
+		font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+		cursor: pointer;
+	}
+	
+</style>	
+	
+<body>
+	
+	<div class="Main">
+		<div class="Window">
+			<h2>Leave a review here</h2>
+			<span class="clossed">X</span>
+			<form>
+				<input type="text" name="name" id="name" class="input" placeholder="Your Name">
+				<input type="email" name="email" id="email" class="input" placeholder="Your E-mail">
+				<input type="textarea" name="textarea" id="textarea" class="input" placeholder="Your Comments :)">
+				<button id="button" class="button">Send</button>
+			</form>
+		</div>
+	</div>
+	
+</body>
+</html>
