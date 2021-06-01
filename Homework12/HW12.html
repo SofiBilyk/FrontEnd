@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW12</title>
+</head>
+
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		img{
+			max-width: 100%;
+			width: auto;
+			height: auto;
+			box-sizing: border-box;
+		}
+		body{
+			color: #071159;
+			font-size: 14px;
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+		}
+		p{
+			margin-bottom: 20px;
+		}
+		.container{
+			width: 1170px;
+			margin: 0 auto;
+		}
+		.clear{
+			clear: both;
+		}
+		.logo{
+			float: left;
+			width: 200px;
+		}
+		.slogon{
+			float: left;
+			width: 400px;
+			text-align: center;
+			font-weight: 400;
+			margin-top: 11px;
+		}
+		.header-contact{
+			float: right;
+		}
+		.header-contact a{
+			display: block;
+			display: block;
+			line-height: 19px;
+			font-weight: 400;
+			text-decoration: none;
+			color: #030153;
+		}
+		.header-contact a:hover{
+			text-decoration: underline;
+		}
+		.header{
+			padding-top: 20px;
+			
+		}
+		.nav{
+			background: #6158FB;
+		}
+		.nav ul.menu{
+			list-style: none;
+		}
+		.nav ul.menu li{
+			position: relative;
+			display: inline-block;
+		}
+		.nav ul.menu li a{
+			color: aquamarine;
+			text-decoration: none;
+			display: inline-block;
+			padding: 15px 20px;
+			font-size: 15px;
+		}
+		.nav ul.menu li a:hover{
+			background: #C7A5A5;
+		}
+		.nav ul.menu li ul.submenu{
+			list-style: none;
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 45px;
+			width: 200px;
+			background: #F29799;
+			padding: 10px 0;
+	
+		}
+		.nav ul.menu li ul.submenu li a{
+			padding:  3px 20px;
+			width: 100%;
+			display: block;
+		}
+		.nav ul.menu li ul.submenu li{
+			display: block;
+		}
+		.nav ul.menu li:nth-child(5):hover ul.submenu{
+			display: block;
+		}
+	</style>
+	
+<body>
+	<div class="for_page">
+		<div class="page">
+			<header class="header" id="header">
+				<div class="container">
+				<a href="/" class="logo">
+				<img src="Img/logo.jpg" alt="MainAcademy"/>
+				</a>
+				<div class="slogon"> Первая и крупнейшая компания сертифицированных специалистов для IT-компаний </div>
+				</div>
+				<div class="header-contact">
+				<a href="tel:+380993456789">(099) 345 67 89</a>
+				<a href="tel:+380993456789">(099) 345 67 89</a>
+				<a href="mailto:mainacad@gmail.com">mainacad@gmail.com</a>
+				</div>
+				<div class="clear">
+				</div>
+				<nav class="nav">
+					<div class="container">
+				<ul class="menu">
+					<li class="item current-item"><a href="#" class="link-item"></a></li>
+					<li class="item"><a href="#" class="link-item">Home</a></li>
+					<li class="item"><a href="#" class="link-item">Courses</a></li>
+					<li class="item"><a href="#" class="link-item">Job</a></li>
+					<li class="item"><a href="#" class="link-item">Blog</a>
+					   <ul class="submenu">
+						   <li class="child-item"><a href="#" class="link-item">Main info</a></li>
+						   <li class="child-item"><a href="#" class="link-item">Our Blog</a></li>
+						   <li class="child-item"><a href="#" class="link-item">Actual</a></li>
+						</ul>
+					</li>
+				</ul>
+				</div>
+				</nav>
+			</header>
+		</div>
+	</div>
+</body>
+</html>
