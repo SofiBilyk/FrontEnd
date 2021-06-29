@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body,
+html{
+	height: 100%;
+}
+body{
+	font-size: 14px;
+	font-family: 'ralewayregular';
+}
+p{
+	margin-bottom: 20px;
+}
+img{
+	width: auto;
+	height: auto;
+	max-width: 100%;
+}
+
+.nav-menu{
+	
+}
+
+.nav-menu ul.menu{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-menu ul.menu li{
+	list-style: none;
+}
+
+.nav-menu ul.menu li a{
+	color: #fff;
+	font-size: 13px;
+	font-family: 'ralewayregular';
+	text-transform: uppercase;
+	transition: 0.3s;
+	padding-left: 15px;
+}
+
+.nav-menu ul.menu li a:hover{
+	text-decoration: none;
+	color: aqua;
+}
+.header{
+	position: relative;
+	z-index: 2;
+	padding-top: 40px;
+}
+.baner{
+	position: relative;
+	z-index: 1;
+	top:-80px;
+	background-size: cover;
+	background-position: left top;
+	background: url("../img/Baner.png") no-repeat;
+	padding-top: 145px;
+	padding-bottom: 155px;
+}
+.separatop{
+	border-bottom: 1px solid rgba(248,238,238,0.4);
+	padding-bottom: 35px;
+}
+.baner-text h1{
+	font-size: 65px;
+	font-family: 'open_sansbold';
+	color: #fff;
+	text-align: center;
+	max-width: 872px;
+	width: 100%;
+	margin:  0 auto; 
+	line-height: 60px;
+	margin-bottom: 33px;
+}
+.box-text-baner{
+	font-family: 'ralewaybold';
+	font-size: 22px;
+	color: aliceblue;
+	max-width: 852px;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 74px;
+}
+.btn-baner{
+	display: block;
+	background: rgba(225,43,46,0.8);
+	font-family: 'open_sansbold';
+	font-size: 13px;
+	color: #fff;
+	padding: 15px 0;
+	max-width: 200px;
+	width: 100%;
+	transition: 0.3s;
+	text-align: center;
+	margin: 0 auto;
+	text-transform: uppercase;
+	border-radius: 2px;
+}
+.btn-baner:hover{
+	text-decoration: none;
+	background: rgba(192,250,245,1.00);
+	color: #333; 
+}
+/*
+    font-family: 'open_sansbold';
+    font-family: 'cardoitalic';
+    font-family: 'open_sansregular';
+    font-family: 'ralewaybold';
+    font-family: 'ralewaylight';
+    font-family: 'ralewayregular';
+    font-family: 'ralewaysemibold';
+*/
+
