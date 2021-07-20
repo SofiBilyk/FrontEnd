@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW25</title>
+</head>
+	
+	<style>
+	</style>
+	
+<body>
+	<button onClick="f1()">Click me 1</button>
+	<div class="task1"></div>
+	
+	<button onClick="f2()">Click me 2</button>
+	<div class="task2"></div>
+	
+	<button onClick="f3()">Click me 3</button>
+	<div class="task3"></div>
+</body>
+	
+	<script>
+		let arr1 = ["Seasons", "Winter", "Spring", "Summer", "Autumn"];
+		let arr2 = ["Winter", "December", "January", "February"];
+		let arr3 = ["Spring", "March", "April", "May"];
+		let arr4 = ["Summer", "June", "July", "August"];
+		let arr5 = ["Autumn", "September", "October", "November"];
+		let arr6 = ["Weather", "Rainny", "Cloudy", "Sunny", "Hot", "Fozzy"];
+		let arr7 = ["Poeple", "Happy", "Sincere", "Frank", "Kind"];
+		
+		function f1(){
+			let task1;
+			task1 = document.querySelector(".task1");
+			
+			for(let i of arr1){
+				task1.innerHTML += i + " ";
+			}
+			for(let i of arr2){
+				task1.innerHTML += i + " ";
+			}
+			for(let i of arr3){
+				task1.innerHTML += i + " ";
+			}
+			for(let i of arr4){
+				task1.innerHTML += i + " ";
+			}
+			for(let i of arr5){
+				task1.innerHTML += i + " ";
+			}
+		}
+		
+		
+		function f2(){
+			let task2;
+			task2 = document.querySelector(".task2");
+			
+			for(let i in arr1){
+				task2.innerHTML += i + " " + arr1[i] + " ";
+			}
+			for(let i in arr2){
+				task2.innerHTML += i + " " + arr2[i] + " ";
+			}
+			for(let i in arr3){
+				task2.innerHTML += i + " " + arr3[i] + " ";
+			}
+			for(let i in arr4){
+				task2.innerHTML += i + " " + arr4[i] + " ";
+			}
+			for(let i in arr5){
+				task2.innerHTML += i + " " + arr5[i] + " ";
+			}
+			for(let i in arr6){
+				task2.innerHTML += i + " " + arr6[i] + " ";
+			}
+			for(let i in arr7){
+				task2.innerHTML += i + " " + arr7[i] + " ";
+			}
+		}
+		
+		function f3(){
+			let task3;
+			task3 = document.querySelector(".task3");
+			
+			let k;
+			
+			for(let i in arr1){
+				k = i;
+				k++;
+			}
+			task3.innerHTML += k + " ";
+			
+			for(let i in arr2){
+				k = i;
+				k++;
+			}
+			task3.innerHTML += k + " ";
+			
+			for(let i in arr3){
+				k = i;
+				k++;
+			}
+			task3.innerHTML += k + " ";
+			
+			for(let i in arr4){
+				k = i;
+				k++;
+			}
+			task3.innerHTML += k + " ";
+			
+			for(let i in arr5){
+				k = i;
+				k++;
+			}
+			task3.innerHTML += k + " ";
+		}
+	</script>
+	
+</html>
