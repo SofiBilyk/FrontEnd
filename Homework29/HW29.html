@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW29</title>
+</head>
+
+<body>
+</body>
+	
+	<script>
+		function task (){
+			console.log(arguments);
+			console.log(arguments.length);
+		};
+		task("a", "b", "c", "d", "e", "f", "g", "h");
+		
+		
+		let Family = function (dadName, mumName, kid1Name, kid2Name, dadAge, mumAge, kid1Age, kid2Age, kid2Age, home){
+			this.dadName = dadName;
+			this.mumName = mumName;
+			this.kid1Name = kid1Name;
+			this.kid2Name = kid2Name;
+			this.dadAge = dadAge;
+			this.mumAge = mumAge;
+			this.kid1Age = kid1Age;
+			this.kid2Age = kid2Age;
+			this.home = home;
+			this.info = function(){
+				return "There are 4 members in our family. My dad`s name is "+this.dadName+". He`s "+this.dadAge+" years old."+" My mum`s name is "+this.mumName+". She`s "+this.mumAge+" years old."+ " My sister`s name is "+this.kid1Name+". She`s "+this.kid1Age+" years old."+" My name is "+this.mumName+". I`m "+this.mumAge+" years old. We leave in the " +this.home 
+			}
+		};
+		
+		let Jack = new Family("Nick", "Helga", "Adell", "Jack", "33", "28", "17", "13", "house");
+		console.log(Jack.info());
+		let Sue = new Family("Mike", "Ann", "Kira", "Sue", "54", "39", "7", "19", "large flat");
+		console.log(Sue.info());
+		let Jone = new Family("Steve", "Linda", "Lili", "Jone", "24", "22", "1", "3", "modern high-rising building");
+		console.log(Jone.info());
+	
+	</script>
+	
+</html>
