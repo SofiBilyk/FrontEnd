@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW27-1</title>
+</head>
+	
+	<style>
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.text {
+	max-height: 0px;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: 1s;
+}
+.text.show {
+    max-height: 300px;
+	padding-bottom: 20px;
+}
+.btn {
+    width: 200px;
+	height: 50px;
+    font-size: 18px;
+    background: #13A7C2;
+	text-transform: uppercase;
+    transition: 0.3s;
+    color: #F8C480;
+    border: 5px #F8C480 solid;
+	border-radius: 20px;
+    
+}
+	</style>
+
+<body>
+	<div class="container">
+	<div  class="text">dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bvdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bvdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bvdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b dbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb bvdbzoi sxjnsl j lhbln h h bb h  bj  hkjbkjbhk  bjb hkhb b </div>
+	
+	<button class = "btn" type="submit" onClick="showMessage()">Read more</button>
+	</div>	
+</body>
+	
+	<script>
+		function showMessage() {
+    let t = document.querySelector(".text");
+    let b = document.querySelector(".btn");
+    t.classList.toggle('show')
+    if (t.classList.contains('show')) {
+        b.innerHTML = "Hide";
+    } else {
+        b.innerHTML = "Read more";
+    }
+}
+	</script>
+	
+</html>
