@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW30</title>
+</head>
+	
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 970px;
+			margin: 50px auto;
+			padding-left: 25%;
+		}
+		input{
+			width: 400px;
+			height: 46px;
+		}
+		.btn{
+			width: 100px;
+			height: 50px;
+			text-align: center;
+			background: aqua;
+			border: 5px solid #3522B7;
+			color:  #3522B7;
+			font-weight: 800;
+		}
+		.btn:hover{
+			background: #3522B7;
+			color: aliceblue;
+		}
+		.errors{
+			color: #8A0609;
+			font-size: 20px;
+			padding-top: 30px;
+		}
+		
+	</style>
+
+<body>
+	<div class="container">
+		
+	<input type="tel" id="tel"  name="tel" placeholder="Enter your phone number with country code" maxlength="13" required/>
+	<button id="btn" class="btn" onClick="Function()">Enter</button>
+			
+	<div id="errors" class="errors"></div>
+	</div>
+</body>
+	
+	<script>
+		function Function(){
+		document.getElementById("errors").innerHTML = "";
+		let x = document.getElementById("tel").value;
+			try{
+				if(x == "")  throw "Please, enter the number";
+				if(x[0] != "+") throw "Check the country code";
+				if(x[1] != "3") throw "Check the country code";
+				if(x[2] != "8") throw "Check the country code";
+				if(x[3] != "0") throw "Check the country code";
+				if(x.length != 13) throw "A real phone number has more numbers";
+				if(x.search(/[^+\d]/) != "-1") throw "Phone numburs can include only numbers";	
+			}
+			catch(err){
+				document.getElementById("errors").innerHTML += err;
+			}
+			}
+	</script>
+	
+</html>
