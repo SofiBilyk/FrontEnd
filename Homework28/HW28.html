@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW28</title>
+</head>
+
+<body>
+	<div id="text"></div>
+</body>
+	
+	<script>
+		let person = {
+			firstName : "Maya",
+			lastName : "Dos",
+			language: " ",
+			name: " ",
+			nameDog: " Profi",
+			
+			set lang(lang){
+				this.language = lang;
+			},
+			set petname(petname){
+				this.name = petname;
+			}
+		};
+		console.log(person);
+		document.getElementById("text").innerHTML += "<b>"+"Step 1" + "</b>" + "<br>" + "firstName : " + person.firstName + "<br>" + "lastName : " + person.lastName + "<br>" + "language : " + person.language + "<br>" + "name : " + person.name + "<br>" + "nameDog : " + person.nameDog + "<br>"+"<br>";
+		
+		person.lang = "eng";
+		person.petname = "Murka";
+		document.getElementById("text").innerHTML += "<b>"+"Step 2" + "</b>" + "<br>" + "firstName : " + person.firstName + "<br>" + "lastName : " + person.lastName + "<br>" + "language : " + person.language + "<br>" + "name : " + person.name + "<br>" + "nameDog : " + person.nameDog + "<br>"+"<br>";
+		console.log(person);
+		
+		delete person.nameDog;
+		document.getElementById("text").innerHTML += "<b>"+"Step 3" + "</b>" + "<br>" + "firstName : " + person.firstName + "<br>" + "lastName : " + person.lastName + "<br>" + "language : " + person.language + "<br>" + "name : " + person.name + "<br>" + "nameDog : " + person.nameDog + "<br>"+"<br>";
+		console.log(person);
+		
+		
+	</script>
+	
+</html>
