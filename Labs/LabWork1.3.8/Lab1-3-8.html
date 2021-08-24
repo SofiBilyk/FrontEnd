@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab1-3-8</title>
+</head>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url("space.jpg") no-repeat;
+			background-size: cover;
+		}
+		.sun{
+			border-radius: 100%;
+			background: #F9D752;
+			width: 200px;
+			height: 200px;
+			margin: 220px auto;
+		}
+		.orbit{
+			border: 5px #fff solid;
+			border-radius: 100%;
+			width: 640px;
+			height: 640px;
+			margin: 35px auto;
+		}
+		.mars{
+			border-radius: 100%;
+			background: #851113;
+			width:100px;
+			height: 100px;
+			position: relative;
+			animation-name: mars;
+			animation-duration: 6s;
+			animation-iteration-count: 10;
+			margin: -365px auto;
+			animation-timing-function: linear;
+		}
+		.mars:hover {
+			-webkit-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+			transition: 0.5s;
+		}
+		.orbit:hover .mars{
+			animation-play-state: paused;
+		}
+		.sun:hover{
+			transform: scale(1.2);
+			transition: 0.5s;
+		}
+		@keyframes mars{
+			from { transform: rotate(0deg) translateX(315px) rotate(0deg); }
+			to   { transform: rotate(360deg) translateX(315px) rotate(-360deg); }
+		}
+		@-webkit-keyframes mars{
+			from { transform: rotate(0deg) translateX(315px) rotate(0deg); }
+			to   { transform: rotate(360deg) translateX(315px) rotate(-360deg); }
+		}
+		@-moz-keyframes mars{
+			from { transform: rotate(0deg) translateX(315px) rotate(0deg); }
+			to   { transform: rotate(360deg) translateX(315px) rotate(-360deg); }
+		}
+		@-o-keyframes mars{
+			from { transform: rotate(0deg) translateX(315px) rotate(0deg); }
+			to   { transform: rotate(360deg) translateX(315px) rotate(-360deg); }
+		}
+	</style>
+	
+<body>
+	
+	<div class="orbit">
+		<div class="sun"></div>
+		<div class="mars"></div>
+	</div>
+</body>
+</html>

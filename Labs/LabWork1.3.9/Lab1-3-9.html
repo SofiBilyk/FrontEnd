@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab1-3-9</title>
+</head>
+
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 1430px;
+			margin: 100px auto;
+		}
+		.header{
+			background: #1473B5;
+			display: flex;
+		}
+		.header button{
+			background: #E67C7E;
+			color: #fff;
+			padding: 10px;
+			margin: 15px;
+		}
+		.header button:nth-child(3){
+			margin-left: auto;
+		}
+		.header button:nth-child(2){
+			margin-left: -10px;
+		}
+		.header button:hover{
+			background: #9B2123;
+		}
+		h2{
+			margin: 30px 0;
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.event-row{
+			display: flex;
+			flex-direction: row;
+			margin: 10px 0;
+		}
+		.event-row-info{
+			background: #EDE9AA;
+			padding: 7px;
+			flex-grow: 1;
+		}
+		.event-row-date,
+		.event-row-price{
+			background: #EABBBC;
+			padding: 7px;
+			min-width: 200px;
+			width: 100%;
+			border: 2px #9B5152 solid;
+			flex: 0 0 200px;
+		}
+		.jobs-row{
+			margin: 15px 0;
+			display: flex;
+			flex-direction: row;
+		}
+		.jobs-row-name{
+			color: #fff;
+			background: #7A0F11;
+			margin-right: 10px;
+			padding: 15px;
+			flex: 0 0 200px;
+		}
+		.jobs-row-info{
+			display: flex;
+			margin-left: 10px;
+			background: #AD6D17;
+			padding: 15px;
+			align-items: flex-end;
+		}
+		.jobs-row-text{
+			color: aliceblue;
+		}
+		.jobs button{
+			color: #fff;
+			background: #7A0F11;
+			border: 1px solid #4B0304;
+			flex: 0 0 120px;
+			max-height: 40px;
+			height: 100%;
+			border-radius: 10px;
+		}
+		.jobs button:hover{
+			background: #CCD155;
+			color: #7A0F11;
+		}
+	</style>
+	
+<body>
+	<div class="container">
+		<div class="header">
+			<button>Services</button>
+			<button>Events</button>
+			<button>Sign In</button>
+		</div>
+		
+		<div class="events">
+			<h2>Events</h2>
+			<div class="event-row">
+				<div class="event-row-info">Description</div>
+				<div class="event-row-date">Date</div>
+				<div class="event-row-price">Price</div>
+			</div>
+			<div class="event-row">
+				<div class="event-row-info">Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga</div>
+				<div class="event-row-date">15.09.2016</div>
+				<div class="event-row-price">57$</div>
+			</div>
+			<div class="event-row">
+				<div class="event-row-info">Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga Description dfb adbv a adfb fda bd fbadf badfb abafsb fa fdg a gfga</div>
+				<div class="event-row-date">15.09.2016</div>
+				<div class="event-row-price">57$</div>
+			</div>
+		</div>
+		
+		<div class="jobs">
+			<h2>Jobs</h2>
+			<div class="jobs-row">
+				<div class="jobs-row-name">Developer</div>
+				<div class="jobs-row-info">
+					<div class="jobs-row-text">agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv </div>
+					<button>Apply</button>
+				</div>
+			</div>
+			
+			<div class="jobs-row">
+				<div class="jobs-row-name">Developer</div>
+				<div class="jobs-row-info">
+					<div class="jobs-row-text">agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv agvsf sdavsdv svdsa avs sdvsd sdvc sdv Sdcv sdvsv savsv </div>
+					<button>Apply</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

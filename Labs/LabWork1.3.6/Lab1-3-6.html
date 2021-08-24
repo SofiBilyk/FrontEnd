@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lab1-3-6</title>
+</head>
+	
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container{
+			width: 970px;
+			margin: 0 auto;
+		}
+		.block1{
+			background: #6EBCFE;
+			display: flex;
+			justify-content: flex-start;
+			margin: 20px;
+		}
+		button{
+			margin: 15px;
+			padding: 15px;
+			color: #fff;
+		}
+		button:hover{
+			background: #A26465;
+		}
+		.block1 button:nth-child(2){
+			margin-left: -10px;
+		}
+		.block1 button{
+			background: #781376;	
+		}
+		.block2 button{
+			background: #9D8944;
+			border: red 2px solid;	
+			width: 45%;
+		}
+		.block2 button:nth-child(1){
+			margin-right: 2.5%;
+		}
+		.block2 button:nth-child(2){
+			margin-left: 2.5%;
+		}
+		.block2{
+			background: #E7C474;
+			display: flex;
+			justify-content: flex-start;
+			margin: 20px;
+			width: 45%;
+		}
+	</style>
+
+<body>
+	<div class="container">
+		<div class="block1">
+			<button>Log In</button>
+			<button>Sing Up</button>
+		</div>
+		<div class="block2">
+			<button>Buy ultimate package</button>
+			<button>Buy standart package</button>
+		</div>
+	</div>
+</body>
+</html>
