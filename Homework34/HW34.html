@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HW34</title>
+</head>
+	
+<style>
+	.container{
+		width: 500px;
+		margin: 0 auto;
+	}
+	img{
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	p{
+		color: white;
+	}
+</style>
+
+<body>
+	<div class="container">
+		<img src="1.jpg" id="sunrise" class="sunrise" alt="sunrise" />
+		<p id="text">Восход и закат Солнца в Украинке
+Четверг, 02 Сентября 2021
+Восход Солнца 06:14, Астрономический полдень: 12:56, Заход Солнца: 19:39, Длина дня: 13:25, Длина ночи: 10:35.
+Пятница, 03 Сентября 2021
+Восход Солнца 06:15, Астрономический полдень: 12:56, Заход Солнца: 19:37, Длина дня: 13:22, Длина ночи: 10:38.
+Суббота, 04 Сентября 2021
+Восход Солнца 06:17, Астрономическ</p>
+	</div>
+</body>
+	<script>
+		let text = document.getElementById("text");
+		
+		sunrise.onmouseover = function(){
+			this.src = "2.jpg";
+			this.alt = "Sunset";
+		}
+		
+		sunrise.onmouseout = function(){
+			//this.src="";
+			//this.alt = "";
+			sunrise.remove();
+			text.style.color = 'black';
+			
+		}
+	</script>
+</html>
