@@ -46,35 +46,28 @@ margin-bottom: 10px;
 `
 
 const Img = styled.img`
-width:155px;
+width: 33%;
 height:150px;
 border-radius:5px;
 @media (max-width:1480px){
-width:130px;
 height:120px;
 }
 @media (max-width:1199px){
-width:200px;
-height:180px;
+height:170px;
 }
 @media (max-width:991px){
-width:184px;
 height:162px;
 }
 @media (max-width:767px){
-width:140px;
 height:120px;
 }
 @media (max-width:600px){
-width:115px;
 height:100px;
 }
 @media (max-width:500px){
-width:100px;
 height:75px;
 }
 @media (max-width:470px){
-width:80px;
 height:60px;
 }
 `
