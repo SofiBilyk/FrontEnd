@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* CSS Document */
+@media (max-width:2500px){
+
+}
+@media (max-width:2000px){
+
+}
+@media (max-width:1800px){
+
+}
+@media (max-width:1650px){
+
+}
+@media (max-width:1480px){
+
+}
+@media (max-width:1199px){
+	  .right-arrow{
+		right: 20%;
+	}
+	.left-arrow{
+		left: 20%;
+	}
+	.image {
+	width: 700px;
+	height: 380px;
+}
+	.slider{
+	padding: 350px 0;
+}
+}
+@media (max-width:991px){
+    .right-arrow{
+		right: 10%;
+	}
+	.left-arrow{
+		left: 10%;
+	}
+	.image {
+	width: 600px;
+	height: 300px;
+}
+	.slider{
+	padding: 300px 0;
+}
+}
+@media (max-width:767px){
+.image {
+	width: 450px;
+	height: 220px;
+}
+	.slider{
+	padding: 250px 0;
+}
+	#Data{
+		width: 80px;
+	}
+}
+@media (max-width:600px){
+	.right-arrow{
+		top: 10%;
+		font-size: 35px;
+	}
+	.left-arrow{
+		top: 10%;
+		font-size: 35px;
+	}
+	.image {
+	width: 350px;
+	height: 200px;
+}
+	.slider{
+	padding: 200px 0;
+	margin-top: 70px;
+		
+}
+
+}
+@media (max-width:500px){
+
+
+}
+@media (max-width:470px){
+
+	.right-arrow{
+		top: 12%;
+		
+	}
+	.left-arrow{
+		top: 12%;
+		
+	}
+	.image {
+	width: 250px;
+	height: 180px;
+}
+	.slider{
+	padding: 160px 0;
+}
+}
